@@ -26,6 +26,7 @@ body {
   font-weight: 600;
   font-style: normal;
   color: var(--textColor);
+  overflow: hidden;
 
   background: #6822c3;
   background: linear-gradient(0deg,rgba(76, 35, 130, 1) 0%, rgba(0, 0, 0, 1) 78%);
@@ -117,4 +118,5 @@ body {
 
 .cta-btn:hover {
   color: var(--bgColor);
+
 }
