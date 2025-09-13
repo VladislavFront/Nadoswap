@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --bgColor: #131212;
+  --textColor: #fff;
+
+  --accentColor: #ce7d20;
+
+  --headerHeight: 120px;
+
+  --radius: 15px;
+  --transition: all .3s;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--textColor);
+
+  background: #6822c3;
+  background: linear-gradient(0deg,rgba(76, 35, 130, 1) 0%, rgba(0, 0, 0, 1) 78%);
+}
+
+.header {
+  height: var(--headerHeight);
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.accent-color {
+  color: var(--accentColor);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 15px;
+  height: calc(100dvh - var(--headerHeight));
+}
+
+.section__title-section {
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.section__card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 25px;
+}
+
+.card-container__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 500px;
+  height: 350px;
+  padding: 25px;
+  font-size: 1.15vw;
+  text-align: center;
+
+  border: 5px solid var(--accentColor);
+  border-radius: var(--radius);
+}
+
+.card__card-title {
+  font-size: 1.75vw;
+  margin-bottom: 25px;
+}
+
+.section__btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  /* border: 3px solid red; */
+}
+
+.cta-btn {
+  width: 750px;
+  text-align: center;
+  padding: 25px;
+  /* margin-bottom: 25px; */
+  font-size: 2.5vw;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--textColor);
+  transition: var(--transition);
+  background: #8c2fd4;
+  background: linear-gradient(145deg,rgba(140, 47, 212, 1) 0%, rgba(194, 112, 45, 1) 32%, rgba(209, 109, 182, 1) 69%, rgba(222, 127, 49, 1) 100%);
+}
+
+.cta-btn:hover {
+  color: var(--bgColor);
+}
